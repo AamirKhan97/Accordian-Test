@@ -1,0 +1,120 @@
+.App {}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    display: none;
+}
+
+.landingDiv {
+    height: calc(100vh - 40px);
+    background-color: #fff;
+    color: #adadad;
+    // padding: 10px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .diffTxt {
+        color: #1f47c2;
+        margin-bottom: 20px;
+    }
+
+    .actionLink {
+        text-decoration: none;
+
+        .actionBtn {
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #1f47c2;
+            height: 40px;
+            width: 150px;
+            border-radius: 12px;
+            color: #fff;
+        }
+    }
+}
+
+
+//  Accordian class
+.mainAccordian {
+    padding: 10px 40px;
+
+    .tittle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #d8d4d4;
+        color: #1f47c2;
+    }
+
+    .accordiansList {
+        padding: 20px;
+        border: 1px solid #d8d4d4;
+        border-radius: 12px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+        .accordion-item {
+            margin-bottom: 25px;
+            border: 8px solid #f7f6f6;
+            border-radius: none;
+
+        }
+
+        .accordion-button:focus {
+
+            box-shadow: none !important;
+        }
+
+        .accordion-item .accordion-button {
+            color: #1f47c2;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid #dad5d5;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: transparent;
+            box-shadow: none !important;
+        }
+
+        .questionsList {
+            font-weight: bold;
+
+            .innerList {
+                margin-bottom: 20px;
+            }
+        }
+
+        .solution {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+
+            .form-check {
+                margin-right: 40px;
+            }
+
+            .form-check-label {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// Global style
+.form-check-input {
+    box-shadow: none !important;
+
+    &:checked {
+        box-shadow: none !important;
+        border-color: grey !important;
+        background-color: grey !important;
+    }
+}
